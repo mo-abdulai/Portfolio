@@ -23,7 +23,38 @@ SnapShare is a social media application that allows users to share photos, video
 ### Frontend
 
 1. Clone the repository:
+ --  git clone https://github.com/mo-abdulai/snapshare.git
 
-   ```bash
-   git clone https://github.com/mo-abdulai/snapshare.git
+2. Navigate to the frontend directory:
+-- cd snapshare/frontend
+
+3. Install dependencies:
+-- npm install
+
+4. Start the development server:
+-- npm start
+
+5. Visit http://localhost:3000 in your browser to view the frontend application.
+
+### Backend
+
+1. Navigate to the backend directory:
+-- cd snapshare/backend
+
+Install dependencies:
+
+npm install
+
+2. Set up Sanity.io:
+    Sign up for an account on Sanity.io.
+    Create a new project and follow the instructions to set up your Sanity studio.
+    Replace the projectId and dataset values in sanity.json with your project's values.
+    Run sanity deploy to deploy your Sanity studio.
+
+3. Start the server:
+-- sanity start
+
+    Visit http://localhost:3333 in your browser to view the Sanity studio.
+
+
 
