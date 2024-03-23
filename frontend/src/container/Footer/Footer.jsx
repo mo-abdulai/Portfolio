@@ -52,7 +52,7 @@ const Footer = () => {
       </div>
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
-          <duv aoo__flex>
+          <div aoo__flex>
             <input
               className="p-text"
               type="text"
@@ -61,9 +61,9 @@ const Footer = () => {
               value={name}
               onChange={handleChange}
             />
-          </duv>
+          </div>
 
-          <duv aoo__flex>
+          <div aoo__flex>
             <input
               className="p-text"
               type="email"
@@ -72,7 +72,7 @@ const Footer = () => {
               value={email}
               onChange={handleChange}
             />
-          </duv>
+          </div>
           <div>
             <textarea
               className="p-text"
@@ -89,7 +89,7 @@ const Footer = () => {
         </div>
       ) : (
         <div>
-          <h3 className="head-text">Thank you for your getting in touch</h3>
+          <h3 className="head-text">Thank you for your getting in touch!</h3>
         </div>
       )}
     </>

@@ -43,7 +43,7 @@ const Work = () => {
       </h2>
 
       <div className="app__works-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["Machine Learning", "Web App", "Mobile App", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
