@@ -16,7 +16,9 @@ const Work = () => {
     const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
+      console.log(data)
       setWorks(data);
+      console.log(data)
       setFilterWork(data);
     });
   }, []);
@@ -43,7 +45,7 @@ const Work = () => {
       </h2>
 
       <div className="app__works-filter">
-        {["Machine Learning", "Web App", "Mobile App", "React JS", "All"].map(
+        {["AI/ML", "Web App", "Mobile App", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}
@@ -101,13 +103,13 @@ const Work = () => {
             </div>
 
             <div className="app__work-content app__flex">
-              <h4 className="bold-text">{work.title}</h4>
+              <h4 className="bold-text">{work?.title}</h4>
               <p className="p-text" style={{ marginTop: 10 }}>
-                {work.description}
+                {work?.description}
               </p>
 
               <div className="app__work-tag app__flex">
-                <p className="p-text">{work.tags[0]}</p>
+                <p className="p-text">{work?.tags[0]}</p>
               </div>
             </div>
           </div>
